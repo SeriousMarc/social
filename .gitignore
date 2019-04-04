@@ -1,0 +1,3 @@
+.venv/
+.vscode/
+social/settings_local.py
