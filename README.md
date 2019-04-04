@@ -1,26 +1,26 @@
-Test assignment for https://www.starnavi.io/vacancy/junior-python-developer
-Time spent for the current task is 1 day.
+# Test assignment for https://www.starnavi.io/vacancy/junior-python-developer
+# Time spent for the current task is 1 day.
 
 
-### run tests
+# run tests
 
 python manage.py test users
 python manage.py test posts
 
 
-### curl/http testing
+# curl/http testing
 
 ## user login
 http post http://0.0.0.0:8000/api/token/ username=username password=password
 
 ## user signup
-# signup email hunter test
+### signup email hunter test
 
 curl -H "content-type: application/json" \\
 -d '{"username":"username", "email":"test@test.test", "password":"password"}' \\
 -X post http://0.0.0.0:8000/api/users/signup/
 
-# signup default and clearbit test
+### signup default and clearbit test
 
 curl -H "content-type: application/json" \\
 -d '{"username":"username", "email":"alex@clearbit.com", "password":"password"}' \\
